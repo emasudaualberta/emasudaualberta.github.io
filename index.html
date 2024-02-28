@@ -12,12 +12,19 @@
 
 <div class = "navbar"> 
   <a class = "icon"href = "index.html"> <img src = "gitcat.png"></a>
-  <a class= "txtbutton" href = "index.html">Home</a></li>  
-  <a class= "txtbutton" href = "https://www.linkedin.com/in/ethan-masuda-18582124b/">Linkedin</a></li>  
-  <a class= "txtbutton" href = "index.html">Resume</a></li>  
-  <input type = "text" id = "mainbar"class = "homebar" placeholder="search my projects" onfocus="onFocus('Try typing in a project name')" onfocusout = "onFocus('search my projects')"></li>
-  <a class = "icon"href = "mailto:masudaethan5803@gmail.com"> <img src = "email.png"></a></li>
-  <a class = "icon"href = "https://github.com/emasudaualberta"> <img src = "gitcat.png"></a></li>
+  <a class= "txtbutton" href = "index.html">Home</a>
+  <a class= "txtbutton" href = "https://www.linkedin.com/in/ethan-masuda-18582124b/">Linkedin</a>
+  <a class= "txtbutton" href = "index.html">Resume</a>
+  <div class= "par">
+    <input type = "text" id = "mainbar"class = "homebar" placeholder="search my projects" onfocus="onFocus('Try typing in a project name');showDropdown()" onfocusout ="onFocus('search my projects');">
+      <div id  = myDropdown class= "dropdownDiv" onmouseout= "hideDropdown()">
+        <a class = "dropdown"href = "caffeineCalc.html">Caffiene Calculator</a>
+
+      </div>
+  </div>
+
+  <a class = "icon"href = "mailto:masudaethan5803@gmail.com"> <img src = "email.png"></a>
+  <a class = "icon"href = "https://github.com/emasudaualberta"> <img src = "gitcat.png"></a>
 
   <button id = "profile">EM</button>
 </div>
