@@ -1,0 +1,66 @@
+.maindisplay{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+   
+    
+
+}
+
+.maindisplay .bigPfp {
+    display:block;
+    width:140px;
+    justify-self: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border-radius: 140px;
+
+
+}
+
+#maintext{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+   
+    
+}
+
+#maintext p{
+   
+    margin-left: auto;
+    margin-right: auto;
+    font-size: xx-large;
+    font-weight: bold;
+    line-height: 0px;
+    
+    color:black;
+    font-family: Arial, Helvetica, sans-serif ;
+
+
+}
+#maintext p2{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif ;
+    width: 35%;
+    
+}
+#maintext a{
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-bottom: 10px;
+    position:relative;
+    color: #8A86C8;
+    font-size: smaller;
+    
+   
+    text-decoration: none;
+
+
+}

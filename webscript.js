@@ -5,6 +5,9 @@ function onFocus(text){
   }
 function showDropdown() {
     document.getElementById("myDropdown").style.display = "block";
+    bar = document.getElementById("mainbar");
+    bar.style.borderBottomLeftRadius = '0px';
+    bar.style.borderBottomRightRadius = '0px';
 }
 
 function hideDropdown(){
@@ -32,3 +35,14 @@ function filterFunc(){
     }
 
 }
+window.onclick = function(e) {
+    if (!e.target.matches('.par, .homebar, .dropdownDiv,.dropdown')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.style.display == 'block') {
+        myDropdown.style.display = 'none';
+        bar = document.getElementById("mainbar");
+        bar.style.borderBottomLeftRadius = '20px';
+        bar.style.borderBottomRightRadius = '20px';
+      }
+    }
+  }

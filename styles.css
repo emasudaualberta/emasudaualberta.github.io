@@ -9,14 +9,18 @@ body {
   }
   .homebar {
     border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border:none;
     background-color: lightgrey;
     color: gray;
     display: block;
     width: 95%;
     padding-left: 45px;
-    padding-top:10px;
-    padding-bottom: 10px;
+    padding-top:15px;
+    padding-bottom: 15px;
     margin-top:5px;
     background-image: url('magnifying\ glass.png');
     background-position: 10px 7px;
@@ -59,15 +63,17 @@ body {
 
 
   .navbar {
+    top:0;
     display: flex;
     width: 99%;
+    position: absolute;
     justify-content:space-around;
     list-style-type: none;
     padding-bottom: 5px;
   }
   .icon{
-    position: relative;
-    align-self: flex-end;
+    
+    
     justify-self: right;
     display: block;
     padding-inline: 20px;
@@ -76,40 +82,49 @@ body {
     
   }
 
-  #profile{
-    border-radius: 50px;
-    margin-left: 20px;
-    width: 60px;
+  .icon .profile{
+    width: 40px;
+    height: 40px;
+    
     border:none;
     background-color: grey;
+    border-radius: 50px;
 
   }
   .show {display: block;}
 
-  .dropdownDiv{
+  .par .dropdownDiv{
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f6f6f6;
     min-width: 230px;
     overflow: auto;
     border: 1px solid #ddd;
     z-index: 1;
     margin-top: 0px;
-    margin-left: 20px;
+    
+    
+    
     width:auto;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    width: 50%;
+    width: 98%;
+    margin-bottom: 0;
   }
   .dropdown{
     color: black;
-    padding: 12px 16px;
+    
+    top: 0;
+    
     text-decoration: none;
     display: block;
+    
+    padding:20px 20px;
+
   }
   .par{
     width: 95%;
-    
+
     margin-right: 20px;
     
   }
