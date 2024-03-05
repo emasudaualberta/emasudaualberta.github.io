@@ -1,0 +1,106 @@
+#projectHolder{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+}
+
+
+.container{
+  margin-top: 10px;
+  width:200px;
+  text-decoration: none;
+  margin-right: 100px;
+  justify-self: flex-start;
+}
+.container p{
+  text-decoration: none;
+  color:blueviolet;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: bold;
+
+}
+.container a{
+  text-decoration: none;
+  
+
+}
+
+.projDisplay{
+ 
+    display: grid;
+    position: relative; 
+    grid-template-columns: repeat(40,1fr);
+    
+}
+.projDisplay:hover{
+  grid-template-columns: repeat(6,1fr);
+  z-index: 8;
+  animation-name: onhover;
+    animation-duration: 0.2s;
+  
+
+}
+
+@keyframes onhover {
+  0%   {grid-template-columns: repeat(40,1fr);}
+  25%  {grid-template-columns: repeat(30,1fr);}
+  50%  {grid-template-columns: repeat(19,1fr);}
+  75%  {grid-template-columns: repeat(9,1fr);}
+  100% {grid-template-columns: repeat(6,1fr);}
+  
+  
+}
+.imageStackBottom {
+    grid-column: 6/span 2;
+    grid-row: 1;
+  }
+  
+.imageStackMid {
+grid-row: 1;
+grid-column: 4/span 2;
+ 
+z-index: 1;
+}
+.imageStackTop {
+    grid-row:1;
+    grid-column: 1/span 2;
+    z-index: 2;
+   
+  }
+
+  .imageStackBottom img{
+    display: block;
+    width: 200px;
+    height:200px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: navy;
+    object-fit: cover;
+
+  }
+  .imageStackMid img{
+
+    display: block;
+    width: 200px;
+    height:200px;
+    border-radius: 30px;
+    border-style: solid;
+    object-fit: cover;
+    border-color: navy;
+
+  }
+  .imageStackTop img{
+    display: block;
+    width: 200px;
+    height:200px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: navy;
+    object-fit: cover;
+
+  }
