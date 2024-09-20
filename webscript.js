@@ -43,9 +43,34 @@ window.onclick = function(e) {
     }
 }
 
-const projectList = ['caffcalc','squish','webportfolio','me','meep','pennn']
+const projectList = ['caffcalc','squish']
+
+
+function fillDropdown(){
+  console.log("pop")
+  var dropdown = document.getElementById('myDropdown')
+  for(project in projectList){
+    createDropdownElement(projectList[project],dropdown)
+  }
+
+}
+
+function createDropdownElement(element,dropdown){
+  var a = document.createElement('a');
+  a.classList.add('dropdown');
+  a.href = element+'.html';
+  a.innerHTML = element;
+  dropdown.appendChild(a);
+
+  //<a class = "dropdown"href = "caffeineCalc.html">Caffiene Calculator</a>
+
+
+
+}
 
 window.onload = () => {
+
+  fillDropdown()
   
   for(project in projectList){
     const layers = ['imageStackTop','imageStackMid','imageStackBottom'];
